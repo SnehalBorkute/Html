@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 60px; /* Adjust navbar height */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed; /* Fixed at top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.section {
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust according to navbar height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .background-img{
+    width: 100vw;
+    height: 100vh;
+    background: url('food3.jpg') ;
+    background-size: cover;
+    top: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:-1;
+}
+h1{
+    font-size: 40px;
+    font-weight: 10px;
+}
+
+
+.animated-text {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    white-space: pre;
+}
+
+.letter {
+    opacity: 0;
+    display: inline-block;
+}
